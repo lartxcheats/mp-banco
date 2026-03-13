@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#FFE600">
+    <title>Mercado Pago - Login</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="logomp.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo no topo -->
+        <div class="logo-section">
+            <img src="logomp.png" alt="Mercado Pago" class="logo">
+        </div>
+
+        <!-- Texto central -->
+        <div class="text-section">
+            <h1>O banco digital<br>oficial do BBB26</h1>
+        </div>
+
+        <!-- Face ID button -->
+        <div class="faceid-section">
+            <button class="faceid-btn" id="authenticateBtn">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <!-- Face outline -->
+                    <path d="M15 20 Q15 15 20 15 L25 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M45 20 Q45 15 40 15 L35 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M15 40 Q15 45 20 45 L25 45" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M45 40 Q45 45 40 45 L35 45" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Eyes -->
+                    <circle cx="22" cy="25" r="2" fill="white"/>
+                    <circle cx="38" cy="25" r="2" fill="white"/>
+                    <!-- Smile -->
+                    <path d="M22 35 Q30 38 38 35" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+                </svg>
+                <span>Face ID</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
